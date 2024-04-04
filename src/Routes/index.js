@@ -8,7 +8,7 @@ const routes = Router();
 
 routes.get("/prueba", ( req, res ) => {
     res.status(200).json({
-        mensaje : " Primera ruta ok "
+        mensaje : " Segunda ruta ok "
     })
 });
 
