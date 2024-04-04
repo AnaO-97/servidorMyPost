@@ -1,7 +1,6 @@
-require('dotenv').config();
 const app = require("./src/app");
+const { PORT } = require("./src/config");
 const { database } = require("./src/db");
-const { PORT } = process.env || 3000;
 
 // force : elimina
 // alter : actualiza
