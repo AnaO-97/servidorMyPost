@@ -8,7 +8,7 @@ const { PORT } = process.env || 3000;
 
 database.sync({ alter: true }).then((res)=>{
     app.listen(PORT, ()=>{
-        console.log(`Server running on port ${ PORT_SERVER } XD`);
+        console.log(`Server running on port ${ PORT } XD`);
     });
 }).catch((err)=>{
     console.log(`SRC/APP error ${ err }`)
