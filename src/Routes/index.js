@@ -6,6 +6,12 @@ const JWTValidation = require("../middlewares/JWTValidation");
 
 const routes = Router();
 
+routes.use("/prueba", ( req, res ) => {
+    res.json({
+        mensaje : " Primera ruta ok "
+    })
+});
+
 routes.use("/user", userRoutes);
 routes.use("/post", JWTValidation, postRoutes);
 routes.use("/favorite", JWTValidation, favoriteRoutes);
