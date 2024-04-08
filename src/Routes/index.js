@@ -7,7 +7,7 @@ const JWTValidation = require("../middlewares/JWTValidation");
 const routes = Router();
 
 routes.get("/", ( req, res ) => {
-    res.status(200).send(" Vamos en buen camino ok ")
+    res.status(200).send(" This is the My Posts server, everything is ready. ")
 });
 
 routes.use("/user", userRoutes);
